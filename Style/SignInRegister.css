@@ -1,0 +1,97 @@
+:root {
+  --background: #111111;
+  --element: #ffed29;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("../Img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative;
+  min-height: 100vh;
+}
+
+.form {
+  position: absolute;
+  width: 28rem;
+  height: 24rem;
+  background-color: var(--background);
+  top: 22%;
+  right: 34%;
+  border-radius: 1.8rem;
+  border: 0.1rem solid #fff;
+}
+
+.form .logo img,
+.registerform .logo img {
+  width: 10rem;
+  height: 5rem;
+  margin: 1.1rem 9rem 0.6rem;
+}
+
+.theform input {
+  display: block;
+  margin: 0.6rem 4.2rem 0;
+  height: 2.2rem;
+  width: 70%;
+  padding: 0.2rem 1rem;
+  border-radius: 0.6rem;
+  border: 0.1rem solid var(--element);
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.theform .forbtn button {
+  cursor: pointer;
+  margin: 1.8rem 8rem 0;
+  height: 2.2rem;
+  width: 40%;
+  padding: 0.4rem 1rem;
+  background-color: var(--element);
+  border-radius: 0.7rem;
+  border: 0.1rem solid #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.theform .signinorregister {
+  color: var(--element);
+  display: block;
+  margin: 3rem 4rem 0;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.theform .signinorregister span {
+  color: #ffff;
+}
+
+.registerform {
+  position: absolute;
+  width: 28rem;
+  height: 30rem;
+  background-color: var(--background);
+  top: 14%;
+  right: 34%;
+  border-radius: 1.8rem;
+  border: 0.1rem solid #fff;
+}

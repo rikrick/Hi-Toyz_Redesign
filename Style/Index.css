@@ -1,0 +1,566 @@
+:root {
+  --background: #111111;
+  --element: #ffed29;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background);
+  color: #fff;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+.navbar {
+  width: 100%;
+  height: 4.2rem;
+  background-color: var(--background);
+  border-bottom: 0.1rem solid var(--element);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+}
+
+.navbar .logo img {
+  width: 6.4rem;
+  height: 4rem;
+  margin-left: 3rem;
+}
+
+.search {
+  width: 34rem;
+  height: 2.4rem;
+  margin: 0 5rem;
+  background-color: #fff;
+  color: var(--background);
+  border-radius: 0.6rem;
+  border: 0.1rem solid var(--element);
+  display: flex;
+  align-items: center;
+}
+.search input {
+  width: 28rem;
+  margin-left: 2rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.search label {
+  margin-left: 1rem;
+  margin-top: 0.2rem;
+}
+
+.menus {
+  margin: 0 2rem 0 8rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.menus a {
+  color: #ffed29;
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.menus .regis {
+  width: 6rem;
+  height: 2.2rem;
+  padding: 0.2rem 1rem;
+  color: var(--background);
+  background-color: var(--element);
+  border-radius: 1rem;
+  border: 0.1rem solid #ffff;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../Img/landing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #111111;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(17, 17, 19, 1) 8%,
+    rgba(255, 255, 255, 0) 50%
+  );
+}
+
+.hero .content {
+  padding: 1.4rem 6%;
+  max-width: 44rem;
+}
+
+.hero .content p {
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+.hero .content a {
+  display: inline-block;
+  width: 10rem;
+  height: 2.4rem;
+  text-align: center;
+  padding: 0.2rem 4%;
+  margin: 0.6rem 0;
+  color: var(--background);
+  background-color: var(--element);
+  border-radius: 1.2rem;
+  font-size: 1.4rem;
+  border: 0.1rem solid #ffff;
+  font-weight: 700;
+}
+
+.about-us {
+  display: flex;
+  justify-items: center;
+  width: 100%;
+  margin: 6rem 0;
+}
+
+.about-us .content {
+  padding: 1.4rem 7%;
+  max-width: 42rem;
+}
+.about-us .content .firstcontent {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+}
+
+.about-us .content .firstcontent span {
+  color: var(--element);
+}
+
+.about-us .content .secondcontent {
+  margin: 0.8rem 0;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+}
+
+.about-us .content .secondcontent span {
+  font-weight: 200;
+}
+.about-us img {
+  width: 38rem;
+  height: 20rem;
+  border-radius: 2rem;
+  padding: 0 2%;
+  margin-left: 0.4rem;
+}
+
+.promo {
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.promo img {
+  width: 100%;
+  height: 22.8rem;
+  border-top: 0.1rem solid var(--element);
+  border-bottom: 0.1rem solid var(--element);
+}
+
+.promo .content {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 38rem;
+}
+
+.promo .content h1 {
+  color: var(--element);
+  font-size: 2.4rem;
+}
+
+.promo .content .percen {
+  padding: 0.6rem 10rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+}
+.promo .content .percen span {
+  color: var(--element);
+  font-size: 4.6rem;
+  font-weight: 700;
+}
+
+.promo .content .end {
+  padding: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+.promo .content a {
+  width: 20.6rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.2rem 1rem;
+  margin: 0.4rem 0;
+  color: var(--background);
+  background-color: var(--element);
+  border-radius: 1.2rem;
+  border: 0.1rem solid #ffff;
+}
+
+.bestsell,
+.thebrand {
+  margin-top: 6.8rem;
+}
+.bestsell h1,
+.thebrand h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2.8rem;
+}
+
+.sellsproduct {
+  max-height: 32rem;
+  padding: 3rem;
+  display: flex;
+  overflow-x: auto;
+  background-color: var(--background);
+  border-top: 0.1rem solid var(--element);
+  border-bottom: 0.1rem solid var(--element);
+}
+
+.sellsproduct::-webkit-scrollbar {
+  width: 0.1rem;
+  height: 0.4rem;
+}
+.sellsproduct::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border: 0.1rem solid var(--element);
+}
+.sellsproduct div {
+  min-width: 15rem;
+  height: 22rem;
+  text-align: center;
+  border-radius: 1.2rem;
+  margin-right: 2.5rem;
+  border: 0.1rem solid var(--element);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  backface-visibility: 0.2;
+  position: relative;
+}
+
+.sellsproduct div h2 {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 0.2rem 0.8rem;
+  width: 90%;
+}
+
+.sellsproduct div p {
+  font-size: 0.8rem;
+  text-align: center;
+  width: 100%;
+  font-weight: 700;
+}
+
+.sellsproduct div a {
+  display: inline-block;
+  position: absolute;
+  bottom: 1.4rem;
+  left: 2.8rem;
+  width: 9.2rem;
+  height: 2rem;
+  padding-top: 0.3rem;
+  text-align: center;
+  color: var(--background);
+  background-color: var(--element);
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  bottom: 2rem;
+}
+
+.sellsproduct .bestproduct8 a {
+  bottom: 50%;
+  text-align: left;
+  right: 50%;
+  height: 3.4rem;
+  padding: 0 0.6rem;
+  border-radius: 1.6rem;
+}
+
+.sellsproduct .bestproduct1 {
+  background-image: url("../Img/seiya.jpg");
+}
+
+.sellsproduct .bestproduct2 {
+  background-image: url("../Img/dartmaul.jpg");
+}
+
+.sellsproduct .bestproduct3 {
+  background-image: url("../Img/lamborgini.jpg");
+}
+
+.sellsproduct .bestproduct4 {
+  background-image: url("../Img/gundam.jpg");
+}
+
+.sellsproduct .bestproduct5 {
+  background-image: url("../Img/minigundam.jpg");
+}
+
+.sellsproduct .bestproduct6 {
+  background-image: url("../Img/corvett.jpg");
+}
+
+.sellsproduct .bestproduct7 {
+  background-image: url("../Img/mercedes.jpg");
+}
+
+.sellsproduct .bestproduct8 {
+  background-image: url("../Img/gundam.jpg");
+}
+
+.infostore {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.infostore .content {
+  width: 42rem;
+  padding: 2rem 10%;
+  margin: 4rem 0;
+}
+
+.infostore .content h2 {
+  color: var(--element);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2rem;
+  padding: 1.6rem 0;
+}
+
+.infostore .content p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 2rem;
+  padding: 0 1rem 0 0;
+}
+
+.infostore .mapstore {
+  width: 24rem;
+}
+
+.infostore .mapstore h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem;
+}
+
+.infostore .mapstore .map {
+  width: 23rem;
+  height: 18rem;
+  border-radius: 1.2rem;
+}
+
+.infostore .mapstore .address {
+  display: flex;
+  justify-content: center;
+}
+
+.infostore .mapstore .pin {
+  margin: 1.8rem 0 1.4rem 1.4rem;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.infostore .mapstore p {
+  font-size: 1.4rem;
+  font-weight: 200;
+  line-height: 1.8rem;
+  padding: 1rem 0.4rem;
+}
+
+.thebrand h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.thebrand .listbrand {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thebrand .listbrand div {
+  background-color: #fff;
+  border-radius: 1rem;
+  border: 0.1rem solid var(--element);
+  width: 13.8rem;
+  height: 6rem;
+  margin-right: 1rem;
+  margin-top: 1.2rem;
+  position: relative;
+}
+
+.thebrand .listbrand .brand1 img,
+.thebrand .listbrand .brand6 img,
+.thebrand .listbrand .brand8 img {
+  width: 4.8rem;
+  height: 4.8rem;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+}
+
+.thebrand .listbrand .brand2 img {
+  width: 11rem;
+  height: 5.4rem;
+  position: absolute;
+  top: 10%;
+  left: 12%;
+}
+
+.thebrand .listbrand .brand3 img,
+.thebrand .listbrand .brand4 img,
+.thebrand .listbrand .brand7 img,
+.thebrand .listbrand .brand5 img {
+  width: 12rem;
+  height: 4.6rem;
+  position: absolute;
+  top: 10%;
+  left: 6%;
+}
+
+.thebrand .listbrand .brand9 img {
+  width: 8.2rem;
+  height: 4rem;
+  position: absolute;
+  top: 14%;
+  left: 20%;
+}
+
+.thefooter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 0.1rem solid var(--element);
+  margin-top: 5rem;
+  padding: 2rem 0 1rem;
+  height: 16.8rem;
+  width: 100%;
+}
+
+.thefooter div {
+  width: 28%;
+}
+.thefooter h2 {
+  color: var(--element);
+  font-size: 1.8rem;
+}
+
+.thefooter .follow h2 {
+  text-align: center;
+}
+.thefooter .contact .telp,
+.mail {
+  position: relative;
+}
+.thefooter .contact img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.6rem 0 0;
+}
+
+.contact {
+  padding: 0 2%;
+}
+
+.follow .thelink {
+  margin-left: 8.4rem;
+}
+
+.openshop {
+  padding: 0 7.6%;
+}
+.thefooter .contact .telp p,
+.contact .mail p {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  display: inline-block;
+  font-size: 1.2rem;
+  width: 4rem;
+  font-weight: 200;
+}
+
+.thelink {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.thelink a {
+  width: 2.6rem;
+  height: 2.6rem;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  margin: 0 1rem;
+}
+
+.thelink a img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.3rem;
+}
+
+.follow {
+  margin-top: 2.6rem;
+}
+
+.openshop p {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+.thefooter .copyright {
+  margin-top: 2.6rem;
+}
