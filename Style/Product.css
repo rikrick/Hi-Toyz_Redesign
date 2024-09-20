@@ -78,7 +78,7 @@ body::-webkit-scrollbar {
   margin-right: 2rem;
 }
 
-.menus .regis {
+.menus .logout {
   width: 7.2rem;
   height: 2.2rem;
   padding: 0.2rem 1.4rem;
@@ -86,4 +86,46 @@ body::-webkit-scrollbar {
   background-color: var(--element);
   border-radius: 1rem;
   border: 0.1rem solid #ffff;
+}
+
+.divproduct {
+  padding-top: 6.8rem;
+}
+
+.rowproduct {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: var(--background);
+}
+
+.listproduct {
+  cursor: pointer;
+  width: 22rem;
+  height: 21rem;
+  background-color: #ffffff;
+  border: 0.1rem solid var(--element);
+  border-radius: 1rem;
+  margin: 1.4rem;
+}
+
+.listproduct img {
+  width: 20rem;
+  height: 12rem;
+  margin: 1rem;
+}
+
+.listproduct h3 {
+  margin: 0.4rem 1.6rem;
+  font-size: 1rem;
+}
+
+.listproduct p {
+  margin: 0 1.6rem;
+  font-size: 0.9rem;
+}
+
+a:hover,
+.logout:hover {
+  color: #ffffff;
 }

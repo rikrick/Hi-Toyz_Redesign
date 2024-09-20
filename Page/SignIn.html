@@ -19,15 +19,29 @@
         <img src="../Img/logo.png" />
       </div>
       <div class="theform">
-        <input id="loginname" placeholder="Name" />
-        <input type="password" id="loginpass" placeholder="Password" />
-        <a class="forbtn" href="../Page/Product.html"
-          ><button>Sign In</button></a
+        <form
+          id="form"
+          action="../Page/Product.html"
+          onsubmit="return validatesignin()"
+          method="GET"
+          name="form"
         >
+          <input id="loginname" placeholder="Name" name="name" />
+          <input
+            type="password"
+            id="loginpass"
+            placeholder="Password"
+            name="password"
+          />
+          <p id="errormess"></p>
+          <button type="submit">Sign In</button>
+        </form>
         <a class="signinorregister" href="../Page/Register.html"
           >Don't have an account? <span>Register here!</span></a
         >
       </div>
     </div>
+
+    <script src="../Js/Script.js"></script>
   </body>
 </html>

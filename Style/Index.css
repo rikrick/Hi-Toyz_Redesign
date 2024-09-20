@@ -564,3 +564,11 @@ body::-webkit-scrollbar {
 .thefooter .copyright {
   margin-top: 2.6rem;
 }
+
+a:hover,
+.regis:hover,
+.hero a:hover,
+.promo a:hover,
+.sellsproduct a:hover {
+  color: #fff;
+}

@@ -19,17 +19,40 @@
         <img src="../Img/logo.png" />
       </div>
       <div class="theform">
-        <input id="registername" placeholder="Name" />
-        <input type="password" id="registerpass" placeholder="Password" />
-        <input type="email" id="registeremail" placeholder="Email" />
-        <input type="number" id="registernumber" placeholder="Phone" />
-        <a class="forbtn" href="../Page/Product.html"
-          ><button>Register</button></a
+        <form
+          id="form"
+          action="../Page/Product.html"
+          onsubmit="return validateregis()"
+          method="GET"
+          name="form"
         >
+          <input id="registername" placeholder="Name" name="name" />
+          <input
+            type="password"
+            id="registerpass"
+            placeholder="Password"
+            name="password"
+          />
+          <input
+            type="email"
+            id="registeremail"
+            placeholder="Email"
+            name="email"
+          />
+          <input
+            type="number"
+            id="registernumber"
+            placeholder="Phone"
+            name="Phone"
+          />
+          <p id="errormess"></p>
+          <button type="submit">Register</button>
+        </form>
         <a class="signinorregister" href="../Page/SignIn.html"
           >Already have an account? <span>Sign In here!</span></a
         >
       </div>
     </div>
+    <script src="../Js/Script.js"></script>
   </body>
 </html>

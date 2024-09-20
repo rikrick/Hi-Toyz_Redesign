@@ -57,9 +57,9 @@ body {
   font-weight: 300;
 }
 
-.theform .forbtn button {
+.theform button {
   cursor: pointer;
-  margin: 1.8rem 8rem 0;
+  margin: 1rem 8rem 0;
   height: 2.2rem;
   width: 40%;
   padding: 0.4rem 1rem;
@@ -94,4 +94,20 @@ body {
   right: 34%;
   border-radius: 1.8rem;
   border: 0.1rem solid #fff;
+}
+
+.theform a:hover,
+button:hover {
+  color: #ffffff;
+}
+
+.theform a span:hover {
+  color: var(--element);
+}
+
+.theform p {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 0.6rem;
+  color: red;
 }
