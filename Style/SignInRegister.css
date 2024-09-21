@@ -38,11 +38,18 @@ body {
   border: 0.1rem solid #fff;
 }
 
+.closepage {
+  margin: 1rem 1rem 0 25rem;
+}
+
+.closepage a {
+  color: var(--element);
+}
 .form .logo img,
 .registerform .logo img {
   width: 10rem;
   height: 5rem;
-  margin: 1.1rem 9rem 0.6rem;
+  margin: 0 9rem 0.6rem;
 }
 
 .theform input {
@@ -74,7 +81,7 @@ body {
 .theform .signinorregister {
   color: var(--element);
   display: block;
-  margin: 3rem 4rem 0;
+  margin: 1.4rem 4rem 0;
   padding: 0.4rem 1rem;
   font-size: 0.9rem;
   font-weight: 300;
